@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import BatteryStatusScreen from './BatteryStatusScreen'; // Adjust the import path as necessary
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -71,6 +72,7 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
+        <BatteryStatusScreen />
         <Header />
         <View
           style={{
